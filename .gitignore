@@ -3,6 +3,7 @@
 .idea/**/tasks.xml
 .idea/**/dictionaries
 .idea/**/inspectionProfiles
+.idea/**/$CACHE_FILES
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
