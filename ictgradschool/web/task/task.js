@@ -36,27 +36,42 @@ window.addEventListener("load", function () {
         for (let i = 0; i < staffDetails.length; i++) {
             const fullName = document.createElement("h3");
             const ul = document.createElement("ul");
-            const p = document.createElement("p");
+            const interest = document.createElement("h3");
+            const ol = document.createElement("ol");
+            // const p = document.createElement("p");
 
             fullName.innerHTML = `${staffDetails[i].firstName} ${staffDetails[i].lastName}`;
 
             const li1 = document.createElement("li");
             const li2 = document.createElement("li");
-            li1.innerHTML=staffDetails[i].details.birthYear;
-            li2.innerHTML=staffDetails[i].details.country;
-            ul.appendChild(li2);
-            ul.appendChild(li1);
-div.appendChild(ul);
-            // p.innerHTML = `<ul><li>${staffDetails[i].details.birthYear}</li><li> ${staffDetails[i].details.country}</li></ul>`;
-            div.appendChild(fullName);
-            // div.appendChild(p);
+            li1.innerHTML = `Birth Year: ${staffDetails[i].details.birthYear}`;
+            li2.innerHTML = `Country: ${staffDetails[i].details.country}`;
+
+            interest.innerHTML = `Interests:`;
+
+            for (let j = 0; j < 6; j++) {
+                const li3 = document.createElement("li");
+                li3.innerHTML = staffDetails[j].interests;
 
 
+
+
+                div.appendChild(fullName);
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+                ol.appendChild(li3);
+                div.appendChild(ul);
+                div.appendChild(interest);
+                div.appendChild(ol);
+                // p.innerHTML = `<ul><li>${staffDetails[i].details.birthYear}</li><li> ${staffDetails[i].details.country}</li></ul>`;
+                // div.appendChild(p);
+
+            }
         }
-
 
     }
 
-createPerson();
+
+    createPerson();
 
 });

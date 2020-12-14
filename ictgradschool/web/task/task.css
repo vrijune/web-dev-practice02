@@ -12,7 +12,7 @@
     justify-content: left;
     flex-direction: column;
     margin-left: 200px;
-    background-color: darkgrey;
+    background-color: lightgrey;
     grid-area: left;
 }
 
@@ -23,7 +23,7 @@
     justify-content: right;
     flex-direction: column;
     margin-right: 200px;
-    background-color: darkgrey;
+    background-color: lightgrey;
     grid-area: right;
 }
 
