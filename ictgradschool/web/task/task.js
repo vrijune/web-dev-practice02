@@ -49,24 +49,26 @@ window.addEventListener("load", function () {
 
             interest.innerHTML = `Interests:`;
 
-            for (let j = 0; j < 6; j++) {
+            div.appendChild(fullName);
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            div.appendChild(ul);
+            div.appendChild(interest);
+
+            for (let j = 0; j < staffDetails[i].interests.length; j++) {
                 const li3 = document.createElement("li");
-                li3.innerHTML = staffDetails[j].interests;
+                li3.innerHTML = `${staffDetails[i].interests[j]}`;
 
 
 
 
-                div.appendChild(fullName);
-                ul.appendChild(li1);
-                ul.appendChild(li2);
                 ol.appendChild(li3);
-                div.appendChild(ul);
-                div.appendChild(interest);
-                div.appendChild(ol);
+
                 // p.innerHTML = `<ul><li>${staffDetails[i].details.birthYear}</li><li> ${staffDetails[i].details.country}</li></ul>`;
                 // div.appendChild(p);
-
             }
+
+            div.appendChild(ol);
         }
 
     }

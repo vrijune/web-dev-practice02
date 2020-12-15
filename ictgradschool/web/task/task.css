@@ -1,4 +1,5 @@
 #header{
+    padding-top: 30px;
     background-color: gray;
     height: 150px;
     text-align: center;
@@ -8,10 +9,9 @@
 
 
 #left{
-    display: flex;
+    padding-left: 50px;
     justify-content: left;
     flex-direction: column;
-    margin-left: 200px;
     background-color: lightgrey;
     grid-area: left;
 }
@@ -19,10 +19,10 @@
 
 
 #right{
-    display: flex;
+    padding-left:50px ;
     justify-content: right;
     flex-direction: column;
-    margin-right: 200px;
+
     background-color: lightgrey;
     grid-area: right;
 }
@@ -31,18 +31,36 @@
 
 
 #main{
-    display: flex;
+    /*display: flex;*/
     justify-content: center ;
 
 }
+@media screen {
 
-#main{
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-    " left right ";
+
+    #main {
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: ". left right .";
+    }
 }
+
+
+@media only screen and (max-width: 600px) {
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas: "left" "right";
+
+}
+
+}
+
+
+
 
 
 /*#container{*/
