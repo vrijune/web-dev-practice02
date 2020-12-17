@@ -1,12 +1,14 @@
 #header{
-    padding-top: 30px;
+    padding: 50px;
     background-color: gray;
-    height: 150px;
     text-align: center;
     margin-top: -20px;
 
 }
 
+body{
+    margin:0px;
+}
 
 #left{
     padding-left: 50px;
@@ -28,10 +30,8 @@
 }
 
 
-
-
 #main{
-    /*display: flex;*/
+
     justify-content: center ;
 
 }
@@ -59,15 +59,4 @@
 
 }
 
-
-
-
-
-/*#container{*/
-/*    display: grid;*/
-/*    grid-template-columns: 1fr 3fr 2fr 1fr;*/
-/*    grid-template-rows: 1fr 2fr ;*/
-/*    grid-template-area:*/
-/*    "header header header header";*/
-/*    ". left right .";*/
 

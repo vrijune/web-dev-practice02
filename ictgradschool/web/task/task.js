@@ -28,6 +28,49 @@ window.addEventListener("load", function () {
     ];
 
 
+//     displayStaffDetails();
+//
+//
+//
+//     function displayStaffDetails(){
+//         let rightDiv = document.getElementById("right");
+//
+//         for (let i = 0; i < staffDetails.length ; i++) {
+//             rightDiv.innerHTML += `
+//             <h3>${staffDetails[i].firstName}   ${staffDetails[i].lastName}</h3>
+//             <ul>
+//             <li>Birth year: ${staffDetails[i].details.birthYear}</li>
+//             <li>Country: ${staffDetails[i].details.country}</li>
+// </ul>
+// <h3>Interests</h3>`;
+//
+//             let orderList = document.createElement("ol");
+//             for (let j = 0; j < staffDetails[i].interests.length ; j++) {
+//                 orderList.innerHTML += `<li>${staffDetails[i].interests[j]}</li>`
+//             }
+//   rightDiv.appendChild(orderList);
+//         }
+//     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function createPerson() {
 
         const div = document.querySelector("#right");
